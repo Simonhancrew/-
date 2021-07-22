@@ -98,7 +98,7 @@
 1. [分层](XJBX/Server/ComputerNetwork/Blog/分层.md)
 2. [TCP/UDP](XJBX/Server/ComputerNetwork/Blog/TCP.md)
 3. [http1-3](XJBX/Server/ComputerNetwork/Blog/HTTP.md)
-4. http优化
+4. [http优化](XJBX/Server/ComputerNetwork/Blog/优化HTTP_1.1.md)
 5. https优化
 6. [设计角度三次握手分析](XJBX/Server/ComputerNetwork/Blog/Tcp的三次握手.md)
 7. [四次挥手分析](XJBX/Server/ComputerNetwork/Blog/Tcp的四次挥手.md)
