@@ -121,14 +121,13 @@
 
 ## 效率工具
 
-1. git详解
-2. vim
 3. [linux命令](XJBX/Server/Tools/Command)
 4. [docker](XJBX/Server/Tools//Docker)
 5. [valgrind](XJBX/Server/Tools/Valgrind/README.md)
 6. [gdb](XJBX/Server/Tools/GDB/README.md)
 7. [简单实现一个Rpc](XJBX/Server/Tools/simpleRpc/README.md)
-8. cmake
+6. [zeromp](XJBX/Server/Tools/ZeroMq)
+7. cmake
 
 ## 项目
 
