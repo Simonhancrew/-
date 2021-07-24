@@ -212,7 +212,7 @@ int accept_callback(int fd,int events,void *arg){
 
 
 
-//
+// 就是redis里面的ae里的baseloop，ngx和libevent也是类似的写法
 int hanreactor_run(struct hanreactor *reactor){
     if(reactor == NULL) return -1;
     if(reactor->epfd < 0) return -1;
@@ -261,7 +261,7 @@ int hanreactor_init(struct hanreactor *reactor){
 }
 
 int hanreactor_destroy(struct hanreactor *reactor){
-    close(reactor);
+    close(reactor->epfd);
     free(reactor->events);
 }
 
