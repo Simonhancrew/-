@@ -92,6 +92,55 @@ root       66655   66654  0 7月17 ?       00:00:00 nginx: worker process
 han       162007  161882  0 10:00 pts/0    00:00:00 grep --color=auto nginx
 ```
 
+查看内存占用最高的进程
+
+```
+han@han-server:~$ ps aux #这里会出来cpu和mem占用，但是我还需要排序取前n
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.1 168832 12916 ?        Ss   7月25   0:08 /sbin/init splash
+```
+
+我的需求就是取占用cpu最多的前10个
+
+```
+han@han-server:~$ ps aux | grep -v PID | sort -nr -k3 | head -n10
+mysql       1274  0.4  2.9 2069596 363052 ?      Ssl  7月25   8:32 /usr/sbin/mysqld
+han         2538  0.4  3.2 4548244 393764 ?      Ssl  7月25   8:33 /usr/bin/gnome-shell
+root        2352  0.2  0.7 261180 93492 tty2     Sl+  7月25   5:06 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+root        1392  0.1  0.0      0     0 ?        S    7月25   2:37 [nv_queue]
+root        1390  0.1  0.0      0     0 ?        S    7月25   2:46 [irq/44-nvidia]
+han         2737  0.1  0.5 524916 62236 ?        Sl   7月25   2:43 /usr/bin/python3 /usr/bin/indicator-sysmonitor
+whoopsie    1874  0.0  0.1 326952 15780 ?        Ssl  7月25   0:00 /usr/bin/whoopsie -f
+systemd+     968  0.0  0.0  90252  6100 ?        Ssl  7月25   0:00 /lib/systemd/systemd-timesyncd
+systemd+     967  0.0  0.1  24028 13324 ?        Ss   7月25   0:02 /lib/systemd/systemd-resolved
+syslog      1126  0.0  0.0 224528  5184 ?        Ssl  7月25   0:00 /usr/sbin/rsyslogd -n -iNONE
+```
+
+解释一下每个的意思
+
+```
+grep -v PID  # 管道的时候第一行也参与进去了，我不要
+sort -nr -k3 # -nr使用默认字符串排序，n代表使用数值排序默认从小到大，r代表反向 
+head -n10 # 取前10行的值
+```
+
+最后的结果就是,这里保留了第一行
+
+```
+han@han-server:~$ ps aux|head -n1;ps aux|grep -v PID|sort -nr -k3|head -n10
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+mysql       1274  0.4  2.9 2069596 363052 ?      Ssl  7月25   8:33 /usr/sbin/mysqld
+han         2538  0.4  3.3 4560532 406660 ?      Ssl  7月25   8:34 /usr/bin/gnome-shell
+root        2352  0.2  0.7 261180 93492 tty2     Sl+  7月25   5:06 /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3
+root        1392  0.1  0.0      0     0 ?        S    7月25   2:37 [nv_queue]
+root        1390  0.1  0.0      0     0 ?        S    7月25   2:46 [irq/44-nvidia]
+han         2737  0.1  0.5 524916 62236 ?        Sl   7月25   2:43 /usr/bin/python3 /usr/bin/indicator-sysmonitor
+whoopsie    1874  0.0  0.1 326952 15780 ?        Ssl  7月25   0:00 /usr/bin/whoopsie -f
+systemd+     968  0.0  0.0  90252  6100 ?        Ssl  7月25   0:00 /lib/systemd/systemd-timesyncd
+systemd+     967  0.0  0.1  24028 13324 ?        Ss   7月25   0:02 /lib/systemd/systemd-resolved
+syslog      1126  0.0  0.0 224528  5184 ?        Ssl  7月25   0:00 /usr/sbin/rsyslogd -n -iNONE
+```
+
 ### pidstat进程资源
 
 pidstat用于监控全部或指定的进程占用系统资源的情况，包括CPU、内存、磁盘I/O、程切换、线程数等数据。
