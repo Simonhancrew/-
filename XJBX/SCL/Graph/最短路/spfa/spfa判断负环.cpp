@@ -75,3 +75,67 @@ int main(){
 上面的算法可以找到负环，等价于这次spfa可以找到负环，等价于新图有负环，等价于原图有负环。得证
 
 */
+
+#if 0
+#include <iostream>
+#include <cstring>
+#include <algorithm>
+#include <queue>
+
+using namespace std;
+
+const int N = 1e4 + 10;
+
+int n,m;
+int d[N],cnt[N],h[N],e[N],ne[N],w[N],idx;
+bool st[N];
+
+void add(int a,int b,int c){
+    e[idx] = b,ne[idx] = h[a],w[idx] = c,h[a] = idx++;
+}
+
+bool spfa(){
+    // 不需要知道距离，只需要知道走的边有没有超过n
+    // 1 把所有的节点入队
+    queue<int> q;
+    for(int i = 1;i <= n;i++){
+        st[i] = true;
+        q.push(i);
+    } 
+    // 2 出队遍历，状态置否
+    while(q.size()){
+        int t = q.front();
+        q.pop();
+        st[t] = false;
+        // 3 周围节点能更新就更新，边数增加
+        for(int i = h[t];i != -1;i = ne[i]){
+            int j = e[i];
+            if(d[j] > d[t] + w[i]){
+                d[j] = d[t] + w[i];
+                cnt[j] = cnt[t] + 1;
+                // 4 走的边多了，存在负环
+                if(cnt[j] >= n) return true;
+                if(!st[j]){
+                    q.push(j);
+                    st[j] = true;
+                }
+            }
+        }
+    }
+    return false;
+}
+
+int main()
+{
+    cin >> n >> m;
+    memset(h,-1,sizeof h);
+    while(m--){
+        int a,b,c;
+        cin >> a >> b >> c;
+        add(a,b,c);
+    }
+    if(spfa()) puts("Yes");
+    else puts("No");
+}
+
+#endif
