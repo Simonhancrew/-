@@ -37,23 +37,27 @@
 
 ## 语言特性
 
-1. [左值和右值](/XJBX/LingChar/LRValue/README.md):
+1. 实现一个string类
+
+   > [string.h](./XJBX/LingChar/string/hstring.h)
+
+2. [左值和右值](/XJBX/LingChar/LRValue/README.md):
 
    > 函数构造学
 
-2. [递归的复杂度](/XJBX/LingChar/Recursion/recursion.h):
+3. [递归的复杂度](/XJBX/LingChar/Recursion/recursion.h):
 
    > 多情况下的复杂度判断
 
-3. [智能指针](XJBX/LingChar/smartPointer/README.md):
+4. [智能指针](XJBX/LingChar/smartPointer/README.md):
 
    > C++11特性
 
-4. [正则](XJBX/LingChar/Regexr/README.md):
+5. [正则](XJBX/LingChar/Regexr/README.md):
 
    > 最全re记录，反正我会了，然后parse了一个pgn file作为例子
-   
-5. 内存管理
+
+6. 内存管理
 
    > [new/delete/operator new/placement new](XJBX/LingChar/MemManagement/new++.md):内存分配cheatsheet
    >
