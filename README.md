@@ -133,7 +133,8 @@
 6. [gdb](XJBX/Server/Tools/GDB/README.md)
 7. [简单实现一个Rpc](XJBX/Server/Tools/simpleRpc/README.md)
 6. [zeromp](XJBX/Server/Tools/ZeroMq)
-7. cmake
+7. [CAS+QUE](XJBX/Server/Tools/CAS)
+8. cmake
 
 ## 项目
 
