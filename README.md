@@ -1,17 +1,10 @@
 # Recipe:stay humble
-## Basic Algorithm
 
-1. [SCL](XJBX/SCL):
+暂无经历整理成gitpage，只能在此记录了解过的网络编程相关技术，以及语言细节，还有数据库和操作系统相关。
 
-   > 基础算法模板，大部分使用C++实现。其中编译器要符合C01标准。
+单纯的算法学习记录移到了另一个repo，[SCL](https://github.com/Simonhancrew/SCL)下，永远喜欢算法，会一直学习QAQ。
 
-2. [BloomFilter](XJBX/Project/Bloomfilter)：
-
-   > 一个参考Cassandra中的BloomFilter实现，Hash选用MurmurHash2，通过双重散列公式生成散列函数参考：http://hur.st/bloomfilter
-
-3. [Consistent Hasing](XJBX/Server/MiddleWare/consistentHashing/README.md):
-
-   > 一致哈希的理解和实现
+项目写好了的会放在最底下，八股文背完以后会单独完成repo的QAQ。
 
 ## Linux高性能服务器
 
@@ -34,6 +27,15 @@
 5. [服务器后台监控框架的实现](XJBX/Server/Tools/monitor)
 
    > 简单实现一个后台进程监控脚本框架,目前实现了进程监控和挂掉重启以及邮件通知
+   >
+
+6. [BloomFilter](XJBX/Project/Bloomfilter)：
+
+   > 一个参考Cassandra中的BloomFilter实现，Hash选用MurmurHash2，通过双重散列公式生成散列函数参考：http://hur.st/bloomfilter
+
+7. [Consistent Hasing](XJBX/Server/MiddleWare/consistentHashing/README.md):
+
+   > 一致哈希的理解和实现
 
 ## 语言特性
 
@@ -80,12 +82,6 @@
 4. [高性能mysql详解](XJBX/Server/DB/Mysql/README.md)
    
    > ^_^
-## 炼丹从入门到放弃
-
-1. what is attention
-2. transformer
-3. vit
-4. xxxx：行人属性检测的
 
 ## Operating System
 
@@ -139,6 +135,7 @@
 ## 项目
 
 1. [分布式私有云](XJBX/Project/CloudDisk/README.md)
-2. ahanDB
-3. LeptServer
+2. Rookies
+3. ahanDB
+4. LeptServer
 
