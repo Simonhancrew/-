@@ -36,6 +36,8 @@
 7. [Consistent Hasing](XJBX/Server/MiddleWare/consistentHashing/README.md):
 
    > 一致哈希的理解和实现
+   
+8. [ThreadPool](XJBX/Server/OS/ThreadPool/)
 
 ## 语言特性
 

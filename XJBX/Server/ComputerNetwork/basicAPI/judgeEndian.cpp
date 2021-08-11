@@ -1,4 +1,6 @@
-#include <stdio.h>
+#include <iostream>
+
+using namespace std;
 
 //现代机器一般使用小端序，但是网络之间的传输一般使用大端序
 //接收处理需要保持端序一致
