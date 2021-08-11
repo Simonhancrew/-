@@ -37,7 +37,8 @@
 
    > 一致哈希的理解和实现
    
-8. [ThreadPool](XJBX/Server/OS/ThreadPool/)
+8. [ThreadPool](XJBX/Server/OS/ThreadPool)
+   > 请求队列生产，多线程消费。简单的C++线程池实现。
 
 ## 语言特性
 
