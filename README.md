@@ -131,7 +131,8 @@
 
 ## 效率工具
 
-1. [linux命令](XJBX/Server/Tools/Command)
+1. [Tmux](XJBX/Server/Tools/Tmux)
+2. [linux命令](XJBX/Server/Tools/Command)
 4. [docker](XJBX/Server/Tools//Docker)
 5. [valgrind](XJBX/Server/Tools/Valgrind/README.md)
 6. [gdb](XJBX/Server/Tools/GDB/README.md)
