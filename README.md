@@ -139,7 +139,8 @@
 7. [简单实现一个Rpc](XJBX/Server/Tools/simpleRpc/README.md)
 6. [zeromp](XJBX/Server/Tools/ZeroMq)
 7. [CAS+QUE](XJBX/Server/Tools/CAS)
-8. cmake
+9. [vim](XJBX/Server/Tools/Vim)
+10. cmake
 
 ## 项目
 
