@@ -70,10 +70,10 @@ gg=G #格式化所有的行
 
 ```bash
 :set paste # 设置成粘贴模式，取消代码自动缩进
-set nopaste # 取消粘贴模式，开启代码自动缩进
-set nu # 显示行号
-set nonu # 隐藏行号
-noh # 关闭查找关键词高亮
+:set nopaste # 取消粘贴模式，开启代码自动缩进
+:set nu # 显示行号
+:set nonu # 隐藏行号
+:noh # 关闭查找关键词高亮
 Ctrl + q # 当vim卡死时，可以取消当前正在执行的命令
 ```
 
