@@ -74,6 +74,10 @@
    > [malloc](XJBX/LingChar/MemManagement/About_malloc.md)：阅读华庭的malloc书籍备忘
    >
    > [malloc.c](XJBX/LingChar/MemManagement/Code/shmalloc.c)：a init version of malloc
+   
+7. RAII
+
+8. [Virtual Function](XJBX/LingChar/VirtualFunc)
 
 ## 数据库
 
