@@ -75,9 +75,11 @@
    >
    > [malloc.c](XJBX/LingChar/MemManagement/Code/shmalloc.c)：a init version of malloc
    
-7. RAII
+7. [RAII](XJBX/LingChar/RAII)
 
-8. [Virtual Function](XJBX/LingChar/VirtualFunc)
+8. [RTTI and cast](XJBX/LingChar/RTTI)
+
+9. [Virtual Function](XJBX/LingChar/VirtualFunc)
 
 ## 数据库
 
