@@ -108,6 +108,7 @@
 ## 多线程
 
 1. [Posix多线程编程翻译](XJBX/Server/OS/PosixThreadsProgramming/README.md)
+2. [C++标准库下的thread](XJBX/Server/OS/并发/stdthread)
 
 ## 计网
 
