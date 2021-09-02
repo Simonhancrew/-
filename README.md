@@ -1,10 +1,8 @@
 # Recipe:stay humble
 
-暂无经历整理成gitpage，只能在此记录了解过的网络编程相关技术，以及语言细节，还有数据库和操作系统相关。
+目前的学习计划在这里：[ZicPlan](Plan/README.md),未来会把这里的内容同沉淀到gitpage。
 
 单纯的算法学习记录移到了另一个repo，[SCL](https://github.com/Simonhancrew/SCL)下，永远喜欢算法，会一直学习QAQ。
-
-项目写好了的会放在最底下，八股文背完以后会单独完成repo的QAQ。
 
 ## Linux高性能服务器
 
