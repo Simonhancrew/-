@@ -149,7 +149,8 @@
 6. [zeromp](XJBX/Server/Tools/ZeroMq)
 7. [CAS+QUE](XJBX/Server/Tools/CAS)
 9. [vim](XJBX/Server/Tools/Vim)
-10. cmake
+10. [bash](XJBX/Server/Tools/shell)
+11. cmake
 
 ## 项目
 
