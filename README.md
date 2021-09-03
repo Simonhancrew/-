@@ -1,8 +1,6 @@
 # Recipe:stay humble
 
-目前的学习计划在这里：[ZicPlan](Plan/README.md),未来会把这里的内容同沉淀到gitpage。
-
-单纯的算法学习记录移到了另一个repo，[SCL](https://github.com/Simonhancrew/SCL)下，永远喜欢算法，会一直学习QAQ。
+单纯的算法学习记录移到了另一个repo，[SCL](https://github.com/Simonhancrew/SCL)下。
 
 ## Linux高性能服务器
 
