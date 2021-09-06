@@ -112,7 +112,7 @@
 
 1. [分层](XJBX/Server/ComputerNetwork/Blog/分层.md)
 2. [TCP/UDP](XJBX/Server/ComputerNetwork/Blog/TCP.md)
-3. [机制](XJBX/Server/ComputerNetwork/Blog/TCP的一些机制.md)
+3. [TCP机制](XJBX/Server/ComputerNetwork/Blog/TCP的一些机制.md)
 4. [http1-3](XJBX/Server/ComputerNetwork/Blog/HTTP.md)
 5. [http优化](XJBX/Server/ComputerNetwork/Blog/优化HTTP_1.1.md)
 6. [短网址解析](XJBX/Server/ComputerNetwork/Blog/短网址解析.md)
