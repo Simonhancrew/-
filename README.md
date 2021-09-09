@@ -149,7 +149,8 @@
 7. [CAS+QUE](XJBX/Server/Tools/CAS)
 9. [vim](XJBX/Server/Tools/Vim)
 10. [bash](XJBX/Server/Tools/shell)
-11. cmake
+11. [SSH&SCP](XJBX/Server/Tools/SSH)
+12. cmake
 
 ## 项目
 
