@@ -40,6 +40,10 @@
 9. [MemPool](XJBX/Server/OS/MemPool)
 
    > 内存池组件的实现
+   
+10. [zerocopy](XJBX\Server\OS\持久化\ZeroCopy)
+
+    > 只了解了sendfile,direct I/O没看
 
 ## 语言特性
 
