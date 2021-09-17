@@ -154,7 +154,8 @@
 9. [vim](XJBX/Server/Tools/Vim)
 10. [bash](XJBX/Server/Tools/shell)
 11. [SSH&SCP](XJBX/Server/Tools/SSH)
-12. cmake
+12. [Git指北](XJBX/Server/Tools/Git)
+13. cmake
 
 ## 项目
 
