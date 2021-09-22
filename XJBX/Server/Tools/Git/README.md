@@ -66,6 +66,21 @@ Git 仓库目录是 Git 用来保存项目的元数据和对象数据库的地�
 
 一般先设置global config，之后做add,commit,push,clone,pull等操作
 
+关于新branch和merge的问题
+
+```
+#一般会在一个branch上做修改
+git checkout -b new_branch_name
+git add ./
+git commit -m "new_branch submit"
+git checkout master
+git merger new_branch_name
+# 一般这个时候会有冲突，需要手动去fix conflict
+# 最后需要重新commit一次
+git add ./
+git commit -m "fix confict"
+```
+
 ### 参考
 
 肯定还有些许操作没有写完，但是可以在下面的书里面查到大多数的操作。
